@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Accordion Control</title>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="Drildown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.Drildown').getReady({
+
+                /*This Fields are only to customize your accordion. 
+                /Not mandatory fileds. $('.Drildown').getReady(); id enough to run your control.*/
+
+                id: 'Container',                    //Container Id you used as container. Use this if use more than one drildown in one Accordion Control.
+                isOpen: false,                      //Should open all content in same time
+                barColor: "lightblue",              //Bar Color
+                textColor: "black",                 //Bar text color
+                iconPosition: "left",              //Expand collapes icon position on bar
+                expandIcon: "images/expand.png",    //Expand icon
+                collapesIcon: "images/collapse.png" //Collapes icon
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="Container">
+        <div class="Drildown">
+            <span style="margin-left: 10px">Company Overview</span>
+        </div>
+        <div class="List">
+            Orion is a globally recognized award-winning organization that for over two decades has developed, integrated, deployed and managed IT services and solutions for leading organizations across the world. Our global network allows us to provide cost-effective deliverance of technology solutions through flexible sourcing strategies onshore, off- shore and near shore. With state-of-the-art facilities and close to 900  associates across three continents we guarantee the highest quality of service regardless of the mix, technologies and locations.
+        </div>
+        <div class="Drildown">
+            <span style="margin-left: 10px">Solution & Services</span>
+        </div>
+        <div class="List">
+            We are a solutions innovator with over 20 years of experience in the design and implementation of business transformation and automation services. We have earned our reputation by listening to our clients and helping them articulate and map out solutions that are creative, user-centric, scalable, and that leverage best-in-breed technology platforms. We have a long and steady history of delivering complete project life cycle implementations, which include deliverables ranging from business requirement analysis, functional design, technical architecture, project planning, detailed design, programming, implementation, quality assurance and post deployment maintenance and support.
+        </div>
+        <div class="Drildown">
+            <span style="margin-left: 10px">Application Development</span>
+        </div>
+        <div class="List">
+            The intensification of information technology has increased the need for developing custom applications. In this competitive business environment it is essential to transform business processes and support business growth by providing tools like payment processing, forms automation, IT service management and content management. The emergence of enterprise applications have eased major business functionalities like online shopping, payment processing, billing systems, IT service management, manufacturing, and enterprise application integration, making custom application development an essential component of a successful enterprise.
+        </div>
+        <div class="Drildown">
+            <span style="margin-left: 10px">Mobility</span>
+        </div>
+        <div class="List">
+            We drive innovation, improve agility and increase productivity with our expertise in developing mobile applications across various platforms like Android™, iPhone®/ iPad®, Blackberry® and Windows Mobile®. Our custom mobile applications add considerable value to any organization by enhancing productivity and streamlining processes. Our cross-platform mobile application development capabilities create powerful and intuitive solutions that address business needs on all levels. 
+        </div>
+        <div class="Drildown">
+            <span style="margin-left: 10px">Cloud</span>
+        </div>
+        <div class="List">
+            Cloud computing has infused the market and set the stage for an innovative approach to IT that allows businesses to acquire IT services with a reduced emphasis on the constraints of traditional software and hardware licensing models.  This significantly impacts every aspect of IT and how users access applications, information and business services.  Enterprise leaders across the globe are becoming increasingly aware of the need to embed cloud into the fabric of their IT and develop an effective cloud strategy that allows optimization of existing IT environments through effective integration of resources into the cloud
+        </div>
+    </div>
+</body>
+</html>
